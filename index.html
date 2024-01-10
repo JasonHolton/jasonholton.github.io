@@ -102,7 +102,7 @@ Find out more at my <a href="https://www.linkedin.com/in/jason-holton" target="_
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form method="post" action="success.html">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -384,6 +384,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Handle form submission if needed
 
+        // Redirect to the success page
+        window.location.href = 'success.html';
+    });
+</script>
 	</body>
 </html>
